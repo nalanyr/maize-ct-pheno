@@ -63,12 +63,15 @@ outputs: summary TSV · per-kernel TSV · 2D masks · 3D models (.nrrd / .nii / 
 
 ```
 maize-ct-pheno/
-├── predict_pic_0827/      # PyTorch (CUDA) build — main software, NVIDIA GPU
 ├── predict_0827_onnx/     # ONNX Runtime build — recommended, any DirectX 12 GPU
+├── predict_pic_0827/      # PyTorch (CUDA) build — NVIDIA GPU
+├── predict_exe_0827/      # PyInstaller packaging for the ONNX build (source + spec)
 └── README.md
 ```
 
-Both builds share the same application code (`main.py`, `ui.py`, `process.py`, `config.py`, `unet.py`, `logger_setup.py`, `nets/`); they differ only in the inference backend. Each folder carries its own README with version-specific notes.
+Both source builds share the same application code (`main.py`, `ui.py`, `process.py`, `config.py`, `unet.py`, `logger_setup.py`, `nets/`); they differ only in the inference backend. Each folder carries its own README with version-specific notes.
+
+A **standalone Windows package** (no Python required) is available from the Releases page; its source and PyInstaller spec live in `predict_exe_0827/`.
 
 ### Installation
 
@@ -215,12 +218,15 @@ MaizeCT-Pheno（玉米 CT 表型分析系统）是一套桌面软件，用于从
 
 ```
 maize-ct-pheno/
-├── predict_pic_0827/      # PyTorch (CUDA) 版本 —— 主程序，需 NVIDIA 显卡
 ├── predict_0827_onnx/     # ONNX Runtime 版本 —— 推荐，任意 DX12 显卡可用
+├── predict_pic_0827/      # PyTorch (CUDA) 版本 —— 需 NVIDIA 显卡
+├── predict_exe_0827/      # ONNX 版的 PyInstaller 打包工程（源码 + spec）
 └── README.md
 ```
 
-两个版本共用同一套应用代码（`main.py`、`ui.py`、`process.py`、`config.py`、`unet.py`、`logger_setup.py`、`nets/`），差异仅在于推理后端。各目录内另有版本专属说明。
+两个源码版本共用同一套应用代码（`main.py`、`ui.py`、`process.py`、`config.py`、`unet.py`、`logger_setup.py`、`nets/`），差异仅在于推理后端。各目录内另有版本专属说明。
+
+**免安装的 Windows 打包版**（无需装 Python，双击即用）在 Releases 页面下载；其源码与 PyInstaller 配置见 `predict_exe_0827/`。
 
 ### 安装
 

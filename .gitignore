@@ -8,10 +8,9 @@ logs/*.onnx
 logs/*.pth
 logs/*_int8.onnx
 
-# 打包与临时文件
+# 打包与临时文件（保留 main.spec，便于复现打包过程）
 build/
 dist/
-*.spec
 ~*
 *.bak
 config.zip
