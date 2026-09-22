@@ -46,7 +46,7 @@ micro-CT scan (grayscale slice sequence, e.g. 356 slices @ 1000×1000)
 outputs: summary TSV · per-kernel TSV · 2D masks · 3D models (.nrrd / .nii / .nii.gz)
 ```
 
-### Validated performance (from the associated thesis)
+### Validated performance (measured on the reference dataset)
 
 | Metric | Value |
 |---|---|
@@ -150,15 +150,9 @@ Common arguments:
 - **Denser loading increases adhesion.** De-adhesion is handled algorithmically, but segmentation quality decreases slightly as kernel count rises (mIoU 0.907 → 0.889 from 13 to 23 kernels).
 - The software validates input/output paths (no identical or nested paths) and all parameters before a run starts.
 
-### Citation
-
-If you use this software, please cite the associated thesis:
-
-> Zhang T. *Development of a High-Throughput Identification Method for Maize Kernel and Embryo Volume Based on CT Imaging and Deep Learning Combined with GWAS Analysis.* Master's thesis, China Agricultural University, 2026.
-
 ### License
 
-No license has been declared yet. Please contact the author before reuse or redistribution.
+No license has been declared yet. Please contact the author before reuse, redistribution, or citation.
 
 ---
 
@@ -201,7 +195,7 @@ MaizeCT-Pheno（玉米 CT 表型分析系统）是一套桌面软件，用于从
 输出：汇总 TSV · 逐粒 TSV · 二维掩膜图 · 三维模型（.nrrd / .nii / .nii.gz）
 ```
 
-### 性能指标（来自配套学位论文）
+### 性能指标（参考数据集实测）
 
 | 指标 | 数值 |
 |---|---|
@@ -305,12 +299,6 @@ python main.py -i <输入文件夹> -o <输出文件夹> -y \
 - **装载越密集、粘连越多**：去粘连由算法处理，但籽粒数增加时分割质量略降（13 粒到 23 粒，mIoU 0.907 → 0.889）。
 - 软件在启动任务前会校验输入/输出路径（不允许相同或父子嵌套）与各项参数。
 
-### 引用
-
-若使用本软件，请引用配套学位论文：
-
-> 张天澍. 基于 CT 图像与深度学习的玉米籽粒及胚体积高通量鉴定方法开发与 GWAS 分析[D]. 中国农业大学, 2026.
-
 ### 许可
 
-尚未声明开源许可，二次使用或分发前请联系作者。
+尚未声明开源许可；二次使用、分发或引用前请联系作者。
