@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 模型权重（请从 Releases 下载）
+logs/*.onnx
+logs/*.pth
+logs/*_int8.onnx
+
+# 打包与临时文件
+build/
+dist/
+*.spec
+~*
+*.bak
+config.zip
