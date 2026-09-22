@@ -1,0 +1,35 @@
+# MaizeCT-Pheno — PyTorch build requirements (verified working set)
+# Python 3.10 (Windows x64)
+#
+# Install torch first (CUDA 12.6 build):
+#   pip install torch==2.13.0+cu126 --index-url https://download.pytorch.org/whl/cu126
+# Then:
+#   pip install -r requirements-pytorch.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+numpy==2.2.6
+scipy==1.15.3
+opencv-python==5.0.0.93
+pillow==12.3.0
+tqdm==4.70.0
+scikit-image==0.25.2
+networkx
+imageio
+tifffile
+lazy-loader
+
+simpleitk==2.5.6
+connected-components-3d==4.1.0
+edt==3.1.2
+
+# torch / CUDA runtime helpers
+filelock
+fsspec
+jinja2
+MarkupSafe
+sympy
+mpmath
+
+# --- GUI ---
+PyQt5==5.15.11
+PyQt5-Qt5==5.15.2
+PyQt5-sip

@@ -90,6 +90,16 @@ pip install torch==2.13.0+cu126 --index-url https://download.pytorch.org/whl/cu1
 
 In mainland China, append `-i https://pypi.tuna.tsinghua.edu.cn/simple` for much faster downloads.
 
+> **Recommended: keep the two backends in separate environments.** PyTorch and `onnxruntime-gpu` both bundle CUDA/cuDNN DLLs, and mismatched versions can clash when both are imported. The ONNX builds (`onnxruntime-directml` / `onnxruntime-gpu`) therefore run best in their own virtualenv or conda env, e.g.:
+>
+> ```bash
+> conda create -n onnx python=3.10 -y
+> conda activate onnx
+> pip install -r requirements-onnx.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+> ```
+>
+> `onnxruntime-directml` itself does not depend on CUDA and can coexist with PyTorch (verified), but an isolated environment keeps DLL resolution predictable and makes packaging reproducible.
+
 ### Model weights
 
 Model weights (~95 MB each) are **not stored in this repository**. Download them from the **Releases** page and place them in the `logs/` folder of the build you use:
@@ -238,6 +248,17 @@ pip install torch==2.13.0+cu126 --index-url https://download.pytorch.org/whl/cu1
 ```
 
 国内下载建议追加清华源：`-i https://pypi.tuna.tsinghua.edu.cn/simple`
+
+> **建议：两种后端各用一个独立环境。** PyTorch 与 `onnxruntime-gpu` 都会自带 CUDA/cuDNN 的动态库，版本不一致时同进程导入可能冲突；ONNX 版（`onnxruntime-directml` / `onnxruntime-gpu`）放在独立的 virtualenv 或 conda 环境里最稳妥：
+>
+> ```bash
+> conda create -n onnx python=3.10 -y
+> conda activate onnx
+> pip install -r requirements-onnx.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+> ```
+>
+> 依赖清单见 `requirements-onnx.txt` / `requirements-pytorch.txt`（均为实测可用的版本组合）。
+> 说明：`onnxruntime-directml` 本身不依赖 CUDA，实测**可以**与 PyTorch 共存；但独立环境能让 DLL 解析更可预测、打包更可复现。
 
 ### 模型文件
 
