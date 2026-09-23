@@ -164,7 +164,7 @@ Common arguments:
 
 **All rights reserved.** The source code is made available for **academic and non-commercial research use only**. Any commercial use, redistribution, or integration into a commercial product or service requires prior written permission from the author.
 
-This software implements methods covered by a **pending patent application (China)**. Nothing in this repository grants any patent license, express or implied. See [LICENSE](LICENSE) for the full terms.
+This software implements methods protected by a **granted patent (China)**. Nothing in this repository grants any patent license, express or implied, or any right to practise the patented methods commercially. See [LICENSE](LICENSE) for the full terms.
 
 ---
 
@@ -326,4 +326,4 @@ python main.py -i <输入文件夹> -o <输出文件夹> -y \
 
 **保留所有权利。** 源码仅供**学术与非商业研究使用**；任何商业使用、二次分发，或集成到商业产品或服务中，均需事先取得作者书面许可。
 
-本软件所实现的方法已提交**中国专利申请（申请中）**。本仓库不授予任何专利许可（无论明示或默示）。完整条款见 [LICENSE](LICENSE)。
+本软件所实现的方法已获得**中国专利授权**。本仓库不授予任何专利许可（无论明示或默示），亦不授予为商业目的实施该专利方法的权利。完整条款见 [LICENSE](LICENSE)。

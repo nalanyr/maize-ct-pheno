@@ -63,3 +63,13 @@ onnxruntime/DirectML/SimpleITK 的 DLL）、`excludes=['torch','torchvision']`�
 | 端到端 | 40 张切片（20 对胚+籽粒）：exit 0，24.8 s，输出 40 张掩膜 + TSV 汇总 |
 | GPU | 冻结 exe 内 `DmlExecutionProvider` 正常激活（AMD Radeon 780M 平台实测） |
 | 依赖 | 不依赖 torch / CUDA，体积约 750 MB（含 2 个 95 MB 模型） |
+
+## 许可与专利 / License & patent
+
+本软件仅供**学术与非商业研究使用**；所实现的方法已获**中国专利授权**，本次分发不授予任何专利许可。
+商业使用、二次分发需事先获得作者书面许可，完整条款见仓库根目录 [LICENSE](../LICENSE)。
+
+Released for **academic and non-commercial research use only**. The implemented methods are
+protected by a **granted patent in China**; no patent license is granted by this distribution.
+Commercial use or redistribution requires prior written permission — see [LICENSE](../LICENSE).
+
