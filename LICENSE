@@ -1,0 +1,68 @@
+MaizeCT-Pheno — Proprietary License (All Rights Reserved)
+玉米 CT 表型分析系统 —— 专有许可（保留所有权利）
+
+Copyright (c) 2026. All rights reserved. / 版权所有，保留所有权利。
+
+--------------------------------------------------------------------------------
+1. Grant / 授权范围
+--------------------------------------------------------------------------------
+The source code and documentation in this repository are provided for academic
+and non-commercial research purposes only. You may read, run and modify them
+for your own non-commercial research, and cite this work in academic
+publications.
+
+本仓库的源码与文档仅供学术与非商业研究目的使用。个人或机构可为自身非商业
+研究阅读、运行与修改，并在学术成果中引用本工作。
+
+--------------------------------------------------------------------------------
+2. Restrictions / 限制
+--------------------------------------------------------------------------------
+Without prior written permission from the copyright holder, you may NOT:
+
+  (a) use this software, in whole or in part, for commercial purposes —
+      including integration into a commercial product or service, or use in
+      paid analysis/consulting services;
+  (b) redistribute, sublicense, or publish the source code, or any derivative
+      work, in whole or in substantial part;
+  (c) remove or alter this notice or any copyright notice.
+
+未经著作权人事先书面许可，不得：
+
+  （a）将本软件（全部或部分）用于商业目的，包括集成到商业产品或服务中、
+        或用于收费的分析与咨询服务；
+  （b）再分发、再许可或发布本源码及其衍生作品（全部或实质性部分）；
+  （c）删除或修改本声明及任何著作权声明。
+
+--------------------------------------------------------------------------------
+3. Patent notice / 专利声明
+--------------------------------------------------------------------------------
+Methods implemented by this software are the subject of a pending patent
+application in China. This repository grants no patent license, express or
+implied. Commercial licensing inquiries are welcome.
+
+本软件所实现的方法已在中国提交专利申请（申请中）。本仓库不授予任何专利许可
+（无论明示或默示）。商业授权请与作者联系。
+
+--------------------------------------------------------------------------------
+4. No warranty / 免责声明
+--------------------------------------------------------------------------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+本软件按"现状"提供，不提供任何明示或默示的担保。
+
+--------------------------------------------------------------------------------
+5. Third-party components / 第三方组件
+--------------------------------------------------------------------------------
+This project depends on third-party open-source packages — including NumPy,
+OpenCV, PyQt5/Qt, SimpleITK, scikit-image, SciPy, connected-components-3d,
+edt, onnxruntime and (for the PyTorch build) PyTorch — each governed by its
+own license. The restrictions in Sections 1–2 apply only to the original code
+of this repository, and do not override the terms of those third-party
+licenses.
+
+本项目依赖若干第三方开源软件包（NumPy、OpenCV、PyQt5/Qt、SimpleITK、
+scikit-image、SciPy、connected-components-3d、edt、onnxruntime，以及 PyTorch
+版本的 PyTorch），各自适用其原有许可条款。第 1–2 节的限制仅针对本仓库的原创
+代码，不改变上述第三方许可的效力。

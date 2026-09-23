@@ -160,9 +160,11 @@ Common arguments:
 - **Denser loading increases adhesion.** De-adhesion is handled algorithmically, but segmentation quality decreases slightly as kernel count rises (mIoU 0.907 → 0.889 from 13 to 23 kernels).
 - The software validates input/output paths (no identical or nested paths) and all parameters before a run starts.
 
-### License
+### License & patent notice
 
-No license has been declared yet. Please contact the author before reuse, redistribution, or citation.
+**All rights reserved.** The source code is made available for **academic and non-commercial research use only**. Any commercial use, redistribution, or integration into a commercial product or service requires prior written permission from the author.
+
+This software implements methods covered by a **pending patent application (China)**. Nothing in this repository grants any patent license, express or implied. See [LICENSE](LICENSE) for the full terms.
 
 ---
 
@@ -320,6 +322,8 @@ python main.py -i <输入文件夹> -o <输出文件夹> -y \
 - **装载越密集、粘连越多**：去粘连由算法处理，但籽粒数增加时分割质量略降（13 粒到 23 粒，mIoU 0.907 → 0.889）。
 - 软件在启动任务前会校验输入/输出路径（不允许相同或父子嵌套）与各项参数。
 
-### 许可
+### 许可与专利声明
 
-尚未声明开源许可；二次使用、分发或引用前请联系作者。
+**保留所有权利。** 源码仅供**学术与非商业研究使用**；任何商业使用、二次分发，或集成到商业产品或服务中，均需事先取得作者书面许可。
+
+本软件所实现的方法已提交**中国专利申请（申请中）**。本仓库不授予任何专利许可（无论明示或默示）。完整条款见 [LICENSE](LICENSE)。
